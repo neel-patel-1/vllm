@@ -48,6 +48,12 @@ cuda_profiler_start()
 add_kernel((blocks_per_grid,), (threads_per_block,), (a, b, c, N))
 cp.cuda.Stream.null.synchronize()
 
+add_kernel((blocks_per_grid,), (threads_per_block,), (a, b, c, N))
+cp.cuda.Stream.null.synchronize()
+
+add_kernel((blocks_per_grid,), (threads_per_block,), (a, b, c, N))
+cp.cuda.Stream.null.synchronize()
+
 # --- End of the profiling range ---
 cuda_profiler_stop()
 
